@@ -1,0 +1,5 @@
+mkdir -p ~/bin
+mkdir -p ~/android/evox
+repo init -u https://github.com/Evolution-X/manifest -b elle
+git clone https://github.com/galacticwarrior448/local_manifests/ -b evox .repo/local_manifests
+repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
